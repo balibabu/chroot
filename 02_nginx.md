@@ -9,6 +9,7 @@ apt install -y python3 wget tmux nano
 ```bash
 apt install nginx certbot python3-certbot-nginx
 ```
+*run this server in a tmux*
 ```bash
 python3 -m http.server 8080 --bind ::
 ```
