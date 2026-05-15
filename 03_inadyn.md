@@ -14,18 +14,6 @@ apt install inadyn
 nano /etc/inadyn.conf
 ```
 
-## Make sure no one is able to edit it except you
-
-```bash
-chmod 600 /etc/inadyn.conf
-```
-
-## Check if syntax is correct
-
-```bash
-inadyn --check-config -f /etc/inadyn.conf
-```
-
 ```bash
 period          = 300
 allow-ipv6      = true
@@ -36,6 +24,18 @@ custom duckdns-ipv6 {
     hostname      = "subdomain name here"
     checkip-command = "ip -6 addr show wlan0 | grep 'scope global' | grep -v 'temporary' | awk '{print $2}' | cut -d'/' -f1 | head -n1"
 }
+```
+
+## Make sure no one is able to edit it except you
+
+```bash
+chmod 600 /etc/inadyn.conf
+```
+
+## Check if syntax is correct
+
+```bash
+inadyn --check-config -f /etc/inadyn.conf
 ```
 
 ## Check if its working with logs directly on the terminal
