@@ -19,14 +19,11 @@ It is not really a “project” — more like my own notes and setup guide 🙂
 
 Before starting, make sure you have:
 
-- An Android device with:
-  - Root access
-  - USB debugging enabled
-  - Root debugging enabled
+- An Android device with USB debugging enabled
 - `adb` installed on your laptop/PC
 - Internet connection
 - Basic Linux terminal knowledge
-
+  
 ---
 
 # 📚 Guide Index
